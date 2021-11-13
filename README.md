@@ -1,0 +1,1 @@
+# Multi_static_library_call
