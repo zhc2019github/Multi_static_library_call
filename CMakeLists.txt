@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.17)
+project(Cliontest)
+set(CMAKE_CXX_STANDARD 11)
+add_subdirectory(add)
+include_directories(add)
+#link_directories(add)
+add_executable(Cliontest main.cpp)
+target_link_libraries(Cliontest mathadd)

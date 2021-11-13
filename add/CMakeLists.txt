@@ -1,0 +1,6 @@
+message("zhc")
+aux_source_directory(. DIR_SRCS)
+add_subdirectory(sub)
+add_library(mathadd STATIC ${DIR_SRCS})
+target_include_directories(mathadd PUBLIC sub)
+target_link_libraries(mathadd mathsub)
